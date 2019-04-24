@@ -1,0 +1,15 @@
+@media screen and (max-width: 680px) {
+  header h3 {
+    font-size: 30px;
+  }
+  .grid-landing-page {
+    -ms-grid-columns: 0px auto 0px;
+    grid-template-columns: 0px auto 0px;
+    -ms-grid-rows: 100px 100px 300px 100px;
+    grid-template-rows: 100px 100px 300px 100px;
+  }
+}
+
+
+
+/*modifies mav menu for mobile*/
