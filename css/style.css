@@ -3,26 +3,33 @@
 sets default (ie root), but can be overridden for mobile if fontScale is modified */
 :root {
   --fontBaseSize: 20px;
-  --fontScale: 1.25; }
+  --fontScale: 1.25;
+}
 
 /* modular scaling based upon unit of fontScale variable*/
 p {
-  font-size: var(--fontBaseSize); }
+  font-size: var(--fontBaseSize);
+}
 
 h5 {
-  font-size: calc(var(--fontBaseSize) * var(--fontScale)); }
+  font-size: calc(var(--fontBaseSize) * var(--fontScale));
+}
 
 h4 {
-  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale)); }
+  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale));
+}
 
 h3 {
-  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale) * var(--fontScale)); }
+  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale) * var(--fontScale));
+}
 
 h2 {
-  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale) * var(--fontScale) * var(--fontScale)); }
+  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale) * var(--fontScale) * var(--fontScale));
+}
 
 h1 {
-  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale) * var(--fontScale) * var(--fontScale) * var(--fontScale)); }
+  font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale) * var(--fontScale) * var(--fontScale) * var(--fontScale));
+}
 
 /*image credit: https://www.flickr.com/photos/usedfree/16512474046/in/photolist-ra9Kfo-84E1ng-2frDAM-37skj4-3x9Ro3-7L4UdD-S9tify-aRbmcz-nkxpb-DuhWt-2fJ89H-84E1kF-6drMP5-bDCEaF-5BrqHc-fA89PX-8s1yq7-6GqDsV-9XZwvY-8s1ytm-2kK8QR-6j6pfd-8TwRcG-8rXv1R-dLUquP-8MgNzX-rZvKG-aqn7Ay-6mgN8n-3r2qDm-cfqXg9-5TWfaj-93qwyZ-8s1ybL-fDZD3A-mSmH5-8s1yeE-dojsZh-8s1y4q-BCQYrL-btk3H-275HB-nUMB19-aMZgMz-Sowco-dwxSem-t1e9rD-2frG8F-A8FYC-kwiJRF */
 body {
@@ -32,7 +39,8 @@ body {
   max-width: var(--bodyMaxWidth, 80em);
   padding: var(--bodyPadding, 1em) 0;
   --textPadding: 30px;
-  --imagePadding: 5px; }
+  --imagePadding: 5px;
+}
 
 header,
 picture,
@@ -42,21 +50,27 @@ nav,
 footer {
   background: #eee6e6;
   padding: 1em;
-  border-radius: 0.2em; }
+  border-radius: 0.2em;
+}
 
 nav {
   background-color: #d1dbe0;
-  padding: 0; }
+  padding: 0;
+}
 
 header, nav, footer, picture {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
-  grid-column: 1 / 4; }
+  grid-column: 1 / 4;
+}
 
 a {
-  text-decoration: none; }
-  a.selected-link {
-    color: #e28528; }
+  text-decoration: none;
+}
+
+a.selected-link {
+  color: #e28528;
+}
 
 /*styles for main page and sub-pages*/
 .grid-landing-page {
@@ -66,7 +80,8 @@ a {
   -ms-grid-columns: 150px auto 150px;
   grid-template-columns: 150px auto 150px;
   -ms-grid-rows: 100px 60px auto 200px 50px;
-  grid-template-rows: 100px 60px auto 200px 50px; }
+  grid-template-rows: 100px 60px auto 200px 50px;
+}
 
 .grid-sub-page {
   display: -ms-grid;
@@ -75,23 +90,32 @@ a {
   -ms-grid-columns: auto 150px;
   grid-template-columns: auto 150px;
   -ms-grid-rows: 100px 50px 300px 50px;
-  grid-template-rows: 100px 50px 300px 50px; }
-  .grid-sub-page picture {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2; }
-  .grid-sub-page article {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-  .grid-sub-page article.grid-text {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-column: 2 / 4; }
-    .grid-sub-page article.grid-text h3 {
-      font-family: "Federo", sans-serif;
-      color: #e28528; }
+  grid-template-rows: 100px 50px 300px 50px;
+}
+
+.grid-sub-page picture {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+.grid-sub-page article {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.grid-sub-page article.grid-text {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+}
+
+.grid-sub-page article.grid-text h3 {
+  font-family: "Federo", sans-serif;
+  color: #e28528;
+}
 
 header, .grid-text, picture, .nav-text {
   display: -webkit-box;
@@ -102,37 +126,46 @@ header, .grid-text, picture, .nav-text {
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+}
 
 header h3 a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: #2a4625;
-  font-family: "Days One", Arial; }
+  font-family: "Days One", Arial;
+}
 
 .grid-text {
-  padding: var(--textPadding, 30px); }
-  .grid-text p {
-    color: #2a4625;
-    font-family: "David Libre", cursive; }
+  padding: var(--textPadding, 30px);
+}
+
+.grid-text p {
+  color: #2a4625;
+  font-family: "David Libre", cursive;
+}
 
 picture {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
-  flex-flow: row wrap; }
-  picture.img-large img {
-    max-width: 100%;
-    height: 230px;
-    padding: var(--imagePadding, 10px); }
+  flex-flow: row wrap;
+}
+
+picture.img-large img {
+  max-width: 100%;
+  height: 230px;
+  padding: var(--imagePadding, 10px);
+}
 
 .nav-text {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   list-style-type: none;
-  padding: 0px 80px 15px 80px; }
+  padding: 0px 80px 15px 80px;
+}
 
 .nav-text a {
   padding-right: 30px;
@@ -140,16 +173,24 @@ picture {
   font-size: 26px;
   background-color: #996767;
   padding: 5px;
-  border-radius: 5px; }
-  .nav-text a:link {
-    color: #eee6e6; }
-  .nav-text a:hover {
-    color: #e28528; }
-  .nav-text a:visited {
-    color: #eee6e6; }
+  border-radius: 5px;
+}
+
+.nav-text a:link {
+  color: #eee6e6;
+}
+
+.nav-text a:hover {
+  color: #e28528;
+}
+
+.nav-text a:visited {
+  color: #eee6e6;
+}
 
 footer p {
-  font-family: "Federo", sans-serif; }
+  font-family: "Federo", sans-serif;
+}
 
 @media screen and (max-width: 680px) {
   /* sets scales and padding for mobile; calcultions occur in class declaration*/
@@ -157,7 +198,8 @@ footer p {
     --mobileScaleIndex: 0.5;
     --fontBaseSize: 16px;
     --bodyMaxWidth: 40em;
-    --bodyPadding: 0em; }
+    --bodyPadding: 0em;
+  }
   .grid-landing-page {
     display: -ms-grid;
     display: grid;
@@ -165,10 +207,12 @@ footer p {
     -ms-grid-columns: 0px auto;
     grid-template-columns: 0px auto;
     -ms-grid-rows: 100px 40px auto 200px 0px;
-    grid-template-rows: 100px 40px auto 200px 0px; }
-    .grid-landing-page picture.img-large img {
-      padding: calc(var(--imagePadding) * var(--mobileScaleIndex));
-      width: auto; }
+    grid-template-rows: 100px 40px auto 200px 0px;
+  }
+  .grid-landing-page picture.img-large img {
+    padding: calc(var(--imagePadding) * var(--mobileScaleIndex));
+    width: auto;
+  }
   .grid-sub-page {
     display: -ms-grid;
     display: grid;
@@ -176,16 +220,23 @@ footer p {
     -ms-grid-columns: 0 auto;
     grid-template-columns: 0 auto;
     -ms-grid-rows: 100px 40px 300px 50px;
-    grid-template-rows: 100px 40px 300px 50px; }
-    .grid-sub-page .grid-text {
-      padding: calc(var(--textPadding) * var(--mobileScaleIndex)); }
+    grid-template-rows: 100px 40px 300px 50px;
+  }
+  .grid-sub-page .grid-text {
+    padding: calc(var(--textPadding) * var(--mobileScaleIndex));
+  }
   .nav-text {
     padding: 5px;
-    margin: 5px; }
-    .nav-text a {
-      font-size: 22px; }
-  /* if mobile is long enough, style the footer to be detached */ }
+    margin: 5px;
+  }
+  .nav-text a {
+    font-size: 22px;
+  }
+  /* if mobile is long enough, style the footer to be detached */
+}
 
 @media screen and (max-width: 680px) and (min-height: 500px) {
   .grid-landing-page footer {
-    margin: 30px; } }
+    margin: 30px;
+  }
+}
