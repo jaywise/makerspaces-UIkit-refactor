@@ -7,7 +7,10 @@
   <title>Makerspaces</title>
   <meta name="description" content="Generate a learning model">
   <meta name="author" content="Josh Weiss">
-   <link href="https://fonts.googleapis.com/css?family=B612|Open+Sans|Ubuntu|ZCOOL+QingKe+HuangYou" rel="stylesheet"> 
+  <!-- hooking up UIkit -->
+  <link rel="stylesheet" href="css/uikit.min.css" />
+  <script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -17,14 +20,26 @@
 	  <header class="title-text"> 
 	    <h3><a href="index.html">Makerspaces in the Bay Area</a></h3>
 	  </header>
-	  
-	  <nav >
+		<nav class="uk-navbar-container" uk-navbar>
+		    <div class="uk-navbar-left">
+		        <ul class="uk-navbar-nav">
+					<li class="uk-active"><a href="index.html">Home</a></li>
+					<li><a href="makery.html">Makery</a></li>
+					<li><a href="noisebridge.html">Noisebridge</a></li>
+					<li><a href="dynamicland.html">Dynamicland</a></li>
+		        </ul>
+		    </div>
+		</nav>
+
+
+
+<!-- 	  <nav >
 		<ul class="nav-text">
 			<li><a href="makery.html">Makery</a></li>
 			<li><a href="noisebridge.html">Noisebridge</a></li>
 			<li><a href="dynamicland.html">Dynamicland</a></li>
 		</ul>	
-	  </nav>
+	  </nav> -->
 
 		<picture class="img-large">
 			<!-- 		    photo credit: https://ed.stanford.edu/sites/default/files/news/image/gse_makery_jan_2019_jpg-54.jpg-->
