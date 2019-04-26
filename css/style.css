@@ -26,22 +26,12 @@ h1 {
 
 /*image credit: https://www.flickr.com/photos/usedfree/16512474046/in/photolist-ra9Kfo-84E1ng-2frDAM-37skj4-3x9Ro3-7L4UdD-S9tify-aRbmcz-nkxpb-DuhWt-2fJ89H-84E1kF-6drMP5-bDCEaF-5BrqHc-fA89PX-8s1yq7-6GqDsV-9XZwvY-8s1ytm-2kK8QR-6j6pfd-8TwRcG-8rXv1R-dLUquP-8MgNzX-rZvKG-aqn7Ay-6mgN8n-3r2qDm-cfqXg9-5TWfaj-93qwyZ-8s1ybL-fDZD3A-mSmH5-8s1yeE-dojsZh-8s1y4q-BCQYrL-btk3H-275HB-nUMB19-aMZgMz-Sowco-dwxSem-t1e9rD-2frG8F-A8FYC-kwiJRF */
 body {
-  background-image: url(../img/treesblackandwhite.jpg);
   margin: 0 auto;
   padding: 0;
   max-width: var(--bodyMaxWidth, 80em);
   padding: var(--bodyPadding, 1em) 0;
   --textPadding: 30px;
   --imagePadding: 5px; }
-
-header,
-picture,
-aside,
-article,
-footer {
-  background: #eee6e6;
-  padding: 1em;
-  border-radius: 0.2em; }
 
 header,
 footer,
@@ -56,15 +46,6 @@ a {
     color: #e28528; }
 
 /*styles for main page and sub-pages*/
-.grid-landing-page {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 1em;
-  -ms-grid-columns: 150px auto 150px;
-  grid-template-columns: 150px auto 150px;
-  -ms-grid-rows: 100px 60px auto 200px 50px;
-  grid-template-rows: 100px 60px auto 200px 50px; }
-
 .grid-sub-page {
   display: -ms-grid;
   display: grid;
@@ -118,7 +99,9 @@ picture {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
   picture.img-large img {
     max-width: 100%;
     height: 230px;
@@ -134,17 +117,6 @@ footer p {
     --fontBaseSize: 16px;
     --bodyMaxWidth: 40em;
     --bodyPadding: 0em; }
-  .grid-landing-page {
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 0.5em;
-    -ms-grid-columns: 0px auto;
-    grid-template-columns: 0px auto;
-    -ms-grid-rows: 100px 40px auto 200px 0px;
-    grid-template-rows: 100px 40px auto 200px 0px; }
-    .grid-landing-page picture.img-large img {
-      padding: calc(var(--imagePadding) * var(--mobileScaleIndex));
-      width: auto; }
   .grid-sub-page {
     display: -ms-grid;
     display: grid;
