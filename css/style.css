@@ -27,11 +27,7 @@ h1 {
 /*image credit: https://www.flickr.com/photos/usedfree/16512474046/in/photolist-ra9Kfo-84E1ng-2frDAM-37skj4-3x9Ro3-7L4UdD-S9tify-aRbmcz-nkxpb-DuhWt-2fJ89H-84E1kF-6drMP5-bDCEaF-5BrqHc-fA89PX-8s1yq7-6GqDsV-9XZwvY-8s1ytm-2kK8QR-6j6pfd-8TwRcG-8rXv1R-dLUquP-8MgNzX-rZvKG-aqn7Ay-6mgN8n-3r2qDm-cfqXg9-5TWfaj-93qwyZ-8s1ybL-fDZD3A-mSmH5-8s1yeE-dojsZh-8s1y4q-BCQYrL-btk3H-275HB-nUMB19-aMZgMz-Sowco-dwxSem-t1e9rD-2frG8F-A8FYC-kwiJRF */
 body {
   margin: 0 auto;
-  padding: 0;
-  max-width: var(--bodyMaxWidth, 80em);
-  padding: var(--bodyPadding, 1em) 0;
-  --textPadding: 30px;
-  --imagePadding: 5px; }
+  max-width: var(--bodyMaxWidth, 80em); }
 
 a {
   text-decoration: none; }
@@ -94,11 +90,9 @@ footer p {
     --mobileScaleIndex: 0.5;
     --fontBaseSize: 16px;
     --bodyMaxWidth: 40em;
-    --bodyPadding: 0em; }
-  .grid-sub-page .grid-text {
-    padding: calc(var(--textPadding) * var(--mobileScaleIndex)); }
-  /* if mobile is long enough, style the footer to be detached */ }
+    --bodyPadding: 0em; } }
 
-@media screen and (max-width: 680px) and (min-height: 500px) {
+/* if mobile is long enough, style the footer to be detached */
+@media screen and (min-height: 500px) {
   .grid-landing-page footer {
     margin: 30px; } }

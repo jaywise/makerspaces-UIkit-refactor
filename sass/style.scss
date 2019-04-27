@@ -49,11 +49,11 @@ h1 {
 body{
     // background-image: url(../img/treesblackandwhite.jpg);
     margin: 0 auto;
-    padding: 0;
+    // padding: 0;
     max-width: var(--bodyMaxWidth, 80em); //assignment 2: custom vaiable declared that is modified in media query
-    padding: var(--bodyPadding, 1em) 0; //assignment 2: custom vaiable declared that is modified in media query
-    --textPadding: 30px; //assignment 2: global variable to be re-calculated upon media query
-    --imagePadding: 5px; //assignment 2: global variable to be re-calculated upon media query
+    // padding: var(--bodyPadding, 1em) 0; //assignment 2: custom vaiable declared that is modified in media query
+    // --textPadding: 30px; //assignment 2: global variable to be re-calculated upon media query
+    // --imagePadding: 5px; //assignment 2: global variable to be re-calculated upon media query
 }
 
 // // header,
@@ -202,13 +202,13 @@ footer p {
   //   }
   // }
 
-  .grid-sub-page{
+  // .grid-sub-page{
     // @include grid-setup(.5em);
     // grid-template-columns: 0 auto;
     // grid-template-rows: 100px 40px 300px 50px;
-    .grid-text {
-      padding: calc(var(--textPadding) * var(--mobileScaleIndex)); //assignment 2: recalculate based on local mobile scaling index
-    }
+    // .grid-text {
+    //   padding: calc(var(--textPadding) * var(--mobileScaleIndex)); //assignment 2: recalculate based on local mobile scaling index
+    // }
   }
   // .nav-text {
   //   padding: 5px;
@@ -225,7 +225,7 @@ footer p {
     }
   }
 
-}
+
 
 
 
