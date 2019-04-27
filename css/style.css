@@ -36,35 +36,21 @@ body {
 a {
   text-decoration: none; }
   a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: grey; }
   a.selected-link {
     color: #e28528; }
 
 /*styles for main page and sub-pages*/
-.grid-sub-page {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 1em;
-  -ms-grid-columns: auto 150px;
-  grid-template-columns: auto 150px;
-  -ms-grid-rows: 100px 50px 300px 50px;
-  grid-template-rows: 100px 50px 300px 50px; }
-  .grid-sub-page picture {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2; }
-  .grid-sub-page article {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-  .grid-sub-page article.grid-text {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-column: 2 / 4; }
-    .grid-sub-page article.grid-text h3 {
-      font-family: "Federo", sans-serif;
-      color: #e28528; }
+.grid-sub-page article {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.grid-sub-page article.grid-text h3 {
+  font-family: "Federo", sans-serif;
+  color: #e28528; }
 
 .grid-text {
   display: -webkit-box;
@@ -109,16 +95,8 @@ footer p {
     --fontBaseSize: 16px;
     --bodyMaxWidth: 40em;
     --bodyPadding: 0em; }
-  .grid-sub-page {
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 0.5em;
-    -ms-grid-columns: 0 auto;
-    grid-template-columns: 0 auto;
-    -ms-grid-rows: 100px 40px 300px 50px;
-    grid-template-rows: 100px 40px 300px 50px; }
-    .grid-sub-page .grid-text {
-      padding: calc(var(--textPadding) * var(--mobileScaleIndex)); }
+  .grid-sub-page .grid-text {
+    padding: calc(var(--textPadding) * var(--mobileScaleIndex)); }
   /* if mobile is long enough, style the footer to be detached */ }
 
 @media screen and (max-width: 680px) and (min-height: 500px) {

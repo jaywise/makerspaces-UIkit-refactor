@@ -83,6 +83,7 @@ a {
   text-decoration: none;
   &:hover{
       text-decoration: none;
+      color:grey;
   }
   &.selected-link{
     color: approach-half-neutral($accent-color);
@@ -97,12 +98,12 @@ a {
 // }
 
 .grid-sub-page {  
-  @include grid-setup;
-  grid-template-columns: auto 150px;
-  grid-template-rows: 100px 50px 300px 50px;
-  picture{
-      grid-column: 1 / 2;
-  }
+  // @include grid-setup;
+  // grid-template-columns: auto 150px;
+  // grid-template-rows: 100px 50px 300px 50px;
+  // picture{
+  //     // grid-column: 1 / 2;
+  // }
   article{
     flex-direction: column;
   }
@@ -111,7 +112,7 @@ a {
         font-family: $accent-font;
         color: approach-half-neutral($accent-color);
       }
-      grid-column: 2 / 4;
+      // grid-column: 2 / 4;
   }
 }
 
@@ -202,9 +203,9 @@ footer p {
   // }
 
   .grid-sub-page{
-    @include grid-setup(.5em);
-    grid-template-columns: 0 auto;
-    grid-template-rows: 100px 40px 300px 50px;
+    // @include grid-setup(.5em);
+    // grid-template-columns: 0 auto;
+    // grid-template-rows: 100px 40px 300px 50px;
     .grid-text {
       padding: calc(var(--textPadding) * var(--mobileScaleIndex)); //assignment 2: recalculate based on local mobile scaling index
     }
