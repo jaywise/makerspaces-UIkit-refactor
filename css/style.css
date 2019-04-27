@@ -37,7 +37,6 @@ a {
   a.selected-link {
     color: #e28528; }
 
-/*styles for main page and sub-pages*/
 .grid-sub-page article {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -90,12 +89,11 @@ footer p {
     --mobileScaleIndex: 0.5;
     --fontBaseSize: 16px;
     --bodyMaxWidth: 40em;
-    --bodyPadding: 0em; } }
+    --bodyPadding: 0em; }
+  p {
+    padding: 10px; }
+  /* if mobile is long enough, style the footer to be detached */ }
 
-p {
-  padding: 10px; }
-
-/* if mobile is long enough, style the footer to be detached */
-@media screen and (min-height: 500px) {
+@media screen and (max-width: 680px) and (min-height: 500px) {
   .grid-landing-page footer {
     margin: 30px; } }
