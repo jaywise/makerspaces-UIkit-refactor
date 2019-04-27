@@ -81,6 +81,9 @@ body{
 
 a {
   text-decoration: none;
+  &:hover{
+      text-decoration: none;
+  }
   &.selected-link{
     color: approach-half-neutral($accent-color);
   }
@@ -119,9 +122,9 @@ a {
 }
 
 header {
-  @extend %grid-sub-container;
+  // @extend %grid-sub-container;
   h3 a {
-    display:flex;
+    // display:flex;
     color: $text-color-primary;
     font-family: $primary-font;
   }

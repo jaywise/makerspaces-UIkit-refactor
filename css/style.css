@@ -35,6 +35,8 @@ body {
 
 a {
   text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
   a.selected-link {
     color: #e28528; }
 
@@ -64,7 +66,7 @@ a {
       font-family: "Federo", sans-serif;
       color: #e28528; }
 
-header, .grid-text {
+.grid-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,9 +78,6 @@ header, .grid-text {
   justify-content: center; }
 
 header h3 a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: #2a4625;
   font-family: "Days One", Arial; }
 
