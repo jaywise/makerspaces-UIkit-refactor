@@ -1,13 +1,6 @@
+// Hooking up UIkit Sass ----------------------------------------------
 
-@import "file-management/variables";
-@import "file-management/mixins";
-@import "file-management/functions";
-@import "file-management/mobile";
-@import "file-management/mixins";
-
-@import url('https://fonts.googleapis.com/css?family=David+Libre|Federo|Days+One|ZCOOL+QingKe+HuangYou');
-
-//assignment: variables; assignment: complementary colors;
+// 1. Your custom variables and variable overwrites.
 $text-color-primary: hsla(111, 30%, 21%, 1);
 $text-color-secondary: hsla(30, 96%, 52%, 1.0);
 $background-color-primary: #eaeaea;
@@ -18,6 +11,31 @@ $primary-font: 'Days One', Arial;
 $secondary-font: 'ZCOOL QingKe HuangYou', sans-serif;
 $accent-font: 'Federo', sans-serif;
 $body-font: 'David Libre', cursive;
+
+// 2. Import default variables and available mixins.
+@import "../scss/variables-theme.scss";
+@import "../scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+@mixin hook-card() { color: #000; }
+
+// 4. Import UIkit.
+@import "../scss/uikit-theme.scss";
+
+
+
+// My custom Sass ------------------------------------------------
+
+@import "file-management/variables";
+@import "file-management/mixins";
+@import "file-management/functions";
+@import "file-management/mobile";
+@import "file-management/mixins";
+
+@import url('https://fonts.googleapis.com/css?family=David+Libre|Federo|Days+One|ZCOOL+QingKe+HuangYou');
+
+//assignment: variables; assignment: complementary colors;
+
 
 /*type-scale for root (desktop)
 sets default (ie root), but can be overridden for mobile if fontScale is modified */
@@ -114,7 +132,7 @@ footer p {
 
 
 //mobile
-@media screen and (max-width: 680px){   //assignment 2: medoia query by type, "screen"
+@media screen and (max-width: $breakpoint-small){   //assignment 2: medoia query by type, "screen"
 
   /* sets scales and padding for mobile; calcultions occur in class declaration*/
   body{
@@ -134,7 +152,6 @@ footer p {
     }
   }
 }
-
 
 
 
