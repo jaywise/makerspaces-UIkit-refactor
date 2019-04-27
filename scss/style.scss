@@ -13,14 +13,14 @@ $accent-font: 'Federo', sans-serif;
 $body-font: 'David Libre', cursive;
 
 // 2. Import default variables and available mixins.
-@import "../scss/variables-theme.scss";
-@import "../scss/mixins-theme.scss";
+@import "variables-theme.scss";
+@import "mixins-theme.scss";
 
 // 3. Your custom mixin overwrites.
 @mixin hook-card() { color: #000; }
 
 // 4. Import UIkit.
-@import "../scss/uikit-theme.scss";
+@import "uikit-theme.scss";
 
 
 
@@ -33,9 +33,6 @@ $body-font: 'David Libre', cursive;
 @import "file-management/mixins";
 
 @import url('https://fonts.googleapis.com/css?family=David+Libre|Federo|Days+One|ZCOOL+QingKe+HuangYou');
-
-//assignment: variables; assignment: complementary colors;
-
 
 /*type-scale for root (desktop)
 sets default (ie root), but can be overridden for mobile if fontScale is modified */
@@ -125,21 +122,21 @@ picture {
   }
 }
 
-
 footer p {
   font-family: $accent-font;
 }
 
 
-//mobile
-@media screen and (max-width: $breakpoint-small){   //assignment 2: medoia query by type, "screen"
+//mobile ---------------------------------------------------
+
+@media screen and (max-width: $breakpoint-small){   
 
   /* sets scales and padding for mobile; calcultions occur in class declaration*/
   body{
-    --mobileScaleIndex: 0.5; //assignment 2: sets local scale for padding;
-    --fontBaseSize: 16px; // assignment 2: sets base of scaling font sizes for mobile
-    --bodyMaxWidth: 40em; //assignment 2: media query with custom variable
-    --bodyPadding: 0em;  //assignment 2: media query with custom variable
+    --mobileScaleIndex: 0.5; 
+    --fontBaseSize: 16px; 
+    --bodyMaxWidth: 40em; 
+    --bodyPadding: 0em;  
   }
   p {
     padding: 10px;
