@@ -92,6 +92,9 @@ footer p {
     --bodyMaxWidth: 40em;
     --bodyPadding: 0em; } }
 
+p {
+  padding: 10px; }
+
 /* if mobile is long enough, style the footer to be detached */
 @media screen and (min-height: 500px) {
   .grid-landing-page footer {
