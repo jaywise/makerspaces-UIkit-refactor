@@ -10557,7 +10557,6 @@ h2 {
 h1 {
   font-size: calc(var(--fontBaseSize) * var(--fontScale) * var(--fontScale) * var(--fontScale) * var(--fontScale) * var(--fontScale)); }
 
-/*image credit: https://www.flickr.com/photos/usedfree/16512474046/in/photolist-ra9Kfo-84E1ng-2frDAM-37skj4-3x9Ro3-7L4UdD-S9tify-aRbmcz-nkxpb-DuhWt-2fJ89H-84E1kF-6drMP5-bDCEaF-5BrqHc-fA89PX-8s1yq7-6GqDsV-9XZwvY-8s1ytm-2kK8QR-6j6pfd-8TwRcG-8rXv1R-dLUquP-8MgNzX-rZvKG-aqn7Ay-6mgN8n-3r2qDm-cfqXg9-5TWfaj-93qwyZ-8s1ybL-fDZD3A-mSmH5-8s1yeE-dojsZh-8s1y4q-BCQYrL-btk3H-275HB-nUMB19-aMZgMz-Sowco-dwxSem-t1e9rD-2frG8F-A8FYC-kwiJRF */
 body {
   margin: 0 auto;
   max-width: var(--bodyMaxWidth, 80em); }
