@@ -10580,7 +10580,7 @@ a {
   font-family: "Federo", sans-serif;
   color: #e28528; }
 
-.grid-text {
+.grid-text, picture {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10609,8 +10609,9 @@ picture {
   -ms-flex-pack: distribute;
   justify-content: space-around; }
   picture.img-large img {
-    max-width: 100%;
-    height: 240px; }
+    max-width: 500px;
+    height: 240px;
+    padding: 10px; }
 
 footer p {
   font-family: "Federo", sans-serif; }
