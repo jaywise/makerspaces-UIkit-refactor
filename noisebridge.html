@@ -5,43 +5,78 @@
   <meta charset="utf-8">
 
   <title>Makerspaces</title>
-  <meta name="description" content="Generate a learning model">
+  <meta name="description" content="Makerspaces">
   <meta name="author" content="Josh Weiss">
-   <link href="https://fonts.googleapis.com/css?family=B612|Open+Sans|Ubuntu|ZCOOL+QingKe+HuangYou" rel="stylesheet"> 
+  <!-- hooking up UIkit -->
+  <link rel="stylesheet" href="css/uikit.min.css" />
+  <script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
+	
 	<div class="grid-sub-page">
-	  <header class="title-text"> 
-	    <h3><a href="index.html">Makerspaces in the Bay Area</a></h3>
-	  </header>
+	  <a class="uk-navbar-toggle uk-hidden@s uk-width-1-3" style="border: 3px solid red" uk-navbar-toggle-icon uk-toggle="target:#offcanvas-nav" href="#"></a>
+		<header class="uk-inline uk-width-1-1">
+	<!-- 		Photo Credit: https://www.weldingandcutting.com/Lincoln-Electric-Welder-140-Control-Circuit-Board-p/l16252-1.htm -->
+		   <img src="img/circuit_board2.jpg" alt="circuit board">
+		   <div class="uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+		   		<h3><a href="index.html">Bay Area Makerspaces</a></h3>
+		   </div>
+		</header>
 	  
-	  <nav >
-		<ul class="nav-text">
-			<li><a href="makery.html">Makery</a></li>
-			<li><a class="selected-link" href="noisebridge.html">Noisebridge</a></li>
-			<li><a href="dynamicland.html">Dynamicland</a></li>
-		</ul>	
-	  </nav>
+		<nav class="uk-navbar-container uk-width-1-1 uk-visible@s" uk-navbar >
+		    <div class="uk-navbar-left">
+		        <ul class="uk-navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="makery.html">Makery</a></li>
+					<li class="uk-active"><a href="noisebridge.html">Noisebridge</a></li>
+					<li><a href="dynamicland.html">Dynamicland</a></li>
+		        </ul>
+		    </div>
+		</nav>
 
-		<picture class="img-large">
-			<!-- 		    photo credit: https://gigaom.com/wp-content/uploads/sites/1/2013/08/img_1938.jpg-->
-		    <a href="noisebridge.html"><img src="img/noisebridge1.jpg"/></a>
-		</picture>
+		<div class="uk-margin uk-child-width-expand@s" uk-grid>
+			<picture class=" img-large">
+			    <a href="noisebridge.html"><img src="img/noisebridge1.jpg"/></a>
+				<!-- 		    photo credit: https://gigaom.com/wp-content/uploads/sites/1/2013/08/img_1938.jpg-->
+			</picture>
+		  	<article class="uk-card uk-card-default grid-text">
+				<h3>Noisebridge</h3>
+				<ul class="uk-subnav uk-subnav-pill" uk-switcher>
+				    <li><a href="#">What</a></li>
+				    <li><a href="#">Where</a></li>
+				    <li><a href="#">More</a></li>
+				</ul>
+				<ul class="uk-switcher uk-margin">
+				    <li>Part-event space, part-community, part-hacker closet. The Mission District in San Francisco fuels the creative energy of this heady and clamorous colab. If you find yourself looking for coffee with a latin flair -- and maybe some mechanical engineering expertise -- then this is the place.</li>
+				    <li>Noisebridge is located at 2169 Mission Street, a 5200-square-foot commercial space in San Francisco's Mission District</li>
+				    <li>Always something going on here. If you'd like to schedule a visit or find out more, be sure to check out their website<a target="_blank" href="https://www.noisebridge.net"> here</a>.</li>
+				</ul>
+		 	 </article>
+	  	</div>
 
-	  <article class="grid-text">
-		<h3>Noisebridge</h3>
+	<div class="uk-divider-icon">
+  	</div>
 
-	    <p> Part-event space, part-community, part-hacker closet. The Mission District in San Francisco fuels the creative energy of this heady and clamorous colab. If you find yourself looking for coffee with a latin flair -- and maybe some mechanical engineering expertise -- then this is the place. See more <a target="_blank" href="https://www.noisebridge.net">here</a>.</p>
-	  </article>
-	  
-	  <footer class="grid-text">
+	  <footer class="uk-width-1-1 grid-text">
 	    <p>2019 Josh Weiss. Protected under the <a target="_blank" href="https://opensource.org/licenses/MIT">MIT license.</a></p>
 	  </footer>
 	</div>
 
+<!--   off-canvas nav bar  -->
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+	<div class="uk-offcanvas-bar">
+				<button class="uk-offcanvas-close" type="button" uk-close></button>
+				<ul class="uk-nav uk-nav-default">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="makery.html">Makery</a></li>
+					<li class="uk-active"><a href="noisebridge.html">Noisebridge</a></li>
+					<li><a href="dynamicland.html">Dynamicland</a></li>
+		        </ul>
+	</div>
+</div>
 
   <script src="js/scripts.js"></script>
 

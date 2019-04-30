@@ -5117,8 +5117,7 @@ ul.uk-nav-sub {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
   -o-transition: opacity 0.15s linear;
-  transition: opacity 0.15s linear;
-  opacity: 0.5; }
+  transition: opacity 0.15s linear; }
 
 /* Phone landscape and bigger */
 @media (min-width: 650px) {
@@ -5216,7 +5215,8 @@ ul.uk-nav-sub {
   max-width: 100%;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
-  transform: translateY(0); }
+  transform: translateY(0);
+  opacity: 0.8; }
 
 /* Sections
  ========================================================================== */
@@ -10632,6 +10632,8 @@ footer p {
     --bodyPadding: 0em; }
   p {
     padding: 10px; }
+  .grid-text {
+    margin: 15px; }
   /* if mobile is long enough, style the footer to be detached */ }
 
 @media screen and (max-width: 650px) and (min-height: 500px) {
