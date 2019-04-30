@@ -24,9 +24,6 @@
 	   		<h3><a href="index.html">Bay Area Makerspaces</a></h3>
 	   </div>
 	</header>
-<!-- 	  <header class="uk-card-default uk-width-1-1"> 
-	    <h3><a href="index.html">Makerspaces in the Bay Area</a></h3>
-	  </header> -->
 
 	<nav class="uk-navbar-container uk-visible@s" uk-navbar >
 		    <div class="uk-navbar-left">
@@ -38,16 +35,6 @@
 		        </ul>
 		    </div>
 	</nav>
-
-
-
-<!-- 	  <nav >
-		<ul class="nav-text">
-			<li><a href="makery.html">Makery</a></li>
-			<li><a href="noisebridge.html">Noisebridge</a></li>
-			<li><a href="dynamicland.html">Dynamicland</a></li>
-		</ul>	
-	  </nav> -->
 
 	<picture class="uk-child-width-expand@s img-large" uk-grid>
 				<!-- 		    photo credit: https://ed.stanford.edu/sites/default/files/news/image/gse_makery_jan_2019_jpg-54.jpg-->
@@ -70,23 +57,64 @@
 		        </div>
    			</div>
 	</picture>
-	<!--   <aside class="uk-card-body uk-card-default uk-width-1-4@s"> Aside content
-	  </aside>
 
-	  <article class="uk-card-default uk-card-body uk-width-1-2@s grid-text">
-	    <p> A makerspace is a place to explore. Build a robot, drill a design, carve an idea. Any age, any ability. Just make. </p>
-	  </article>
-
-	  <aside class="uk-card-default uk-card-body uk-width-1-4@s">Aside content
-	  </aside> -->
-
-	 <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+	 <div class="uk-child-width-expand@s uk-text-left" uk-grid>
 	    <div>
-	        <article class="uk-card uk-card-default uk-card-body grid-text">
-		    <p> A makerspace is a place to explore. Build a robot, drill a design, carve an idea. Any age, any ability. Just make. </p>
-		  </article>
+	        <article class="uk-card uk-card-default uk-card-body uk-flex uk-flex-column uk-align-left grid-text">
+			    <p> A makerspace is a place to explore. Build a robot, drill a design, carve an idea. Any age, any ability. Just make. For updates, sign up below: </p>
+				<form class="uk-form-stacked">
+				    <fieldset class="uk-fieldset">
+<!-- 				        <legend class="uk-legend">Email newsletter sign-up</legend> -->
+				        <div class="uk-margin">
+				            <input class="uk-input" type="text" placeholder="Name" alt="name">
+				        </div>
+				        <div class="uk-margin">
+				            <input class="uk-input" type="text" placeholder="Email" alt="email">
+				        </div>
+				        <div class="uk-margin">
+					        <div uk-form-custom="target: > * > span:first-child" alt="professional status">
+					            <select >
+					                <option value="">Select status</option>
+					                <option value="1">Student (education or IT)</option>
+					                <option value="2">Student (non-education or IT)</option>
+					                <option value="3">Professional (education or IT)</option>
+					                <option value="4">Professional (non-education or IT)</option>
+					                <option value="5">Other</option>
+					            </select>
+					            <button class="uk-button uk-button-default" type="button" tabindex="-1">
+					                <span></span>
+					                <span uk-icon="icon: chevron-down"></span>
+					            </button>
+					        </div>
+					    </div>
+				        <div class="uk-margin" alt="interested projects">
+				            <textarea class="uk-textarea" rows="5" placeholder="Tell us about a fun project you've seen or made lately"></textarea>
+				        </div>
+				        <div class="uk-margin uk-align-left">
+					        <div class="uk-form-label">Which Makerspace(s) are you interested in? </div>
+						     <div class="uk-align-left uk-form-controls">
+						        <label><input alt="the makery" class="uk-checkbox" type="checkbox"> The Makery</label><br>
+						        <label><input alt="noisebridge" class="uk-checkbox" type="checkbox"> Noisebridge</label><br>
+						        <label><input alt="the makery" class="uk-checkbox" type="checkbox"> Dynamicland</label>
+						    </div>
+				    	</div>
+				    </fieldset>
+				</form>
+				
+				<!-- This is a button toggling the modal with the default close button -->
+				<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-close-default">Submit</button>
+
+				<!-- This is the modal with the default close button -->
+				<div id="modal-close-default" uk-modal>
+				    <div class="uk-modal-dialog uk-modal-body">
+				        <button class="uk-modal-close-default" type="button" uk-close></button>
+				        <h2 class="uk-modal-title">You're all signed up</h2>
+				        <p>Thank you for signing up to our newsletter. We are excited to count you among our growing movement! Be sure to check your inbox on the 5th of each month for news and updates.</p>
+				    </div>
+				</div>
+			</article>
 	    </div>
-	    <div class="">
+	    <div>
 	        <article class="uk-card uk-card-default uk-card-body grid-text uk-flex uk-flex-column">
 	        	<h5 class="uk-heading-divider">Upcoming events</h5>
 	        	<dl class="uk-description-list uk-text-left">
@@ -104,7 +132,7 @@
   <div class="uk-divider-icon">
   </div>
 
-  <footer class="uk-width-1-1 grid-text">
+  <footer class="uk-width-1-1 uk-text-align-center grid-text">
 	<p>2019 Josh Weiss. Protected under the <a target="_blank" href="https://opensource.org/licenses/MIT">MIT license.</a></p>
   </footer>
 </div>

@@ -102,7 +102,7 @@ header {
 }
 
 .grid-text {
-  @extend %grid-sub-container;
+  // @extend %grid-sub-container;
   p{
     color: $text-color-primary;
     font-family: $body-font;

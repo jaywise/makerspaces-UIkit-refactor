@@ -10579,7 +10579,7 @@ a {
   font-family: "Federo", sans-serif;
   color: #e28528; }
 
-.grid-text, picture {
+picture {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
