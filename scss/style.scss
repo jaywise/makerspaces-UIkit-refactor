@@ -12,12 +12,18 @@ $secondary-font: 'ZCOOL QingKe HuangYou', sans-serif;
 $accent-font: 'Federo', sans-serif;
 $body-font: 'David Libre', cursive;
 
+$breakpoint-small: 650px;
+$divider-icon-line-width: 90%;
+
 // 2. Import default variables and available mixins.
 @import "variables-theme.scss";
 @import "mixins-theme.scss";
 
 // 3. Your custom mixin overwrites.
-@mixin hook-card() { color: #000; }
+@mixin hook-modal() { opacity: 0.5; }
+@mixin hook-modal-close-default() { background-color: #EFC2B9; opacity: 0.8;}
+
+
 
 // 4. Import UIkit.
 @import "uikit-theme.scss";
@@ -102,7 +108,6 @@ header {
 }
 
 .grid-text {
-  // @extend %grid-sub-container;
   p{
     color: $text-color-primary;
     font-family: $body-font;
@@ -121,8 +126,11 @@ picture {
   }
 }
 
-footer p {
+footer {
+  @extend %grid-sub-container;
+  p {
   font-family: $accent-font;
+}
 }
 
 // .uk-divider-icon-small{

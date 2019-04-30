@@ -427,7 +427,7 @@ template {
  * Breakpoints
  */
 .uk-breakpoint-s::before {
-  content: "640px"; }
+  content: "650px"; }
 
 .uk-breakpoint-m::before {
   content: "960px"; }
@@ -439,7 +439,7 @@ template {
   content: "1600px"; }
 
 :root {
-  --uk-breakpoint-s: 640px;
+  --uk-breakpoint-s: 650px;
   --uk-breakpoint-m: 960px;
   --uk-breakpoint-l: 1200px;
   --uk-breakpoint-xl: 1600px; }
@@ -632,11 +632,11 @@ a.uk-link-reset:hover,
 
 .uk-divider-icon::before {
   right: calc(50% + (50px / 2));
-  width: 100%; }
+  width: 90%; }
 
 .uk-divider-icon::after {
   left: calc(50% + (50px / 2));
-  width: 100%; }
+  width: 90%; }
 
 /* Small
  ========================================================================== */
@@ -2236,7 +2236,7 @@ select.uk-form-width-xsmall {
   padding-right: 15px; }
 
 /* Phone landscape and bigger */
-@media (min-width: 640px) {
+@media (min-width: 650px) {
   .uk-container {
     padding-left: 30px;
     padding-right: 30px; } }
@@ -2297,7 +2297,7 @@ select.uk-form-width-xsmall {
   margin-right: 0; }
 
 /* Phone landscape and bigger */
-@media (min-width: 640px) {
+@media (min-width: 650px) {
   .uk-container-expand-left.uk-container-xsmall,
   .uk-container-expand-right.uk-container-xsmall {
     max-width: calc(50% + (750px / 2) - 30px); }
@@ -2337,7 +2337,7 @@ select.uk-form-width-xsmall {
   margin-right: -15px; }
 
 /* Phone landscape and bigger */
-@media (min-width: 640px) {
+@media (min-width: 650px) {
   .uk-container-item-padding-remove-left,
   .uk-container-item-padding-remove-right {
     width: calc(100% + 30px); }
@@ -2673,7 +2673,7 @@ select.uk-form-width-xsmall {
   padding-bottom: 40px; }
 
 /* Phone landscape and bigger */
-@media (min-width: 640px) {
+@media (min-width: 650px) {
   .uk-tile {
     padding-left: 30px;
     padding-right: 30px; } }
@@ -2778,7 +2778,11 @@ select.uk-form-width-xsmall {
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  color: #000; }
+  -webkit-transition: -webkit-box-shadow 0.1s ease-in-out;
+  transition: -webkit-box-shadow 0.1s ease-in-out;
+  -o-transition: box-shadow 0.1s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out; }
 
 /* Sections
  ========================================================================== */
@@ -5113,10 +5117,11 @@ ul.uk-nav-sub {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
   -o-transition: opacity 0.15s linear;
-  transition: opacity 0.15s linear; }
+  transition: opacity 0.15s linear;
+  opacity: 0.5; }
 
 /* Phone landscape and bigger */
-@media (min-width: 640px) {
+@media (min-width: 650px) {
   .uk-modal {
     padding: 50px 30px; } }
 
@@ -5281,6 +5286,10 @@ ul.uk-nav-sub {
 /*
  * Default
  */
+.uk-modal-close-default {
+  background-color: #EFC2B9;
+  opacity: 0.8; }
+
 /*
  * Outside
  * 1. Prevent scrollbar on small devices
@@ -6021,7 +6030,7 @@ ul.uk-nav-sub {
 /* Responsiveness
 ========================================================================== */
 /* Phones portrait and smaller */
-@media (max-width: 639px) {
+@media (max-width: 649px) {
   .uk-notification {
     left: 10px;
     right: 10px;
@@ -6278,7 +6287,7 @@ ul.uk-nav-sub {
   font-size: 2rem; }
 
 /* Phone landscape and bigger */
-@media (min-width: 640px) {
+@media (min-width: 650px) {
   .uk-countdown-number {
     font-size: 4rem; } }
 
@@ -6293,7 +6302,7 @@ ul.uk-nav-sub {
   font-size: 1rem; }
 
 /* Phone landscape and bigger */
-@media (min-width: 640px) {
+@media (min-width: 650px) {
   .uk-countdown-separator {
     font-size: 2rem; } }
 
@@ -6897,7 +6906,7 @@ ul.uk-nav-sub {
   min-width: 1px; }
 
 /* Phone landscape and bigger */
-@media (min-width: 640px) {
+@media (min-width: 650px) {
   .uk-child-width-1-1\@s > * {
     width: 100%; }
   .uk-child-width-1-2\@s > * {
@@ -7062,7 +7071,7 @@ ul.uk-nav-sub {
   min-width: 1px; }
 
 /* Phone landscape and bigger */
-@media (min-width: 640px) {
+@media (min-width: 650px) {
   /* Whole */
   .uk-width-1-1\@s {
     width: 100%; }
@@ -7416,7 +7425,7 @@ ul.uk-nav-sub {
   text-align: justify !important; }
 
 /* Phone landscape and bigger */
-@media (min-width: 640px) {
+@media (min-width: 650px) {
   .uk-text-left\@s {
     text-align: left !important; }
   .uk-text-right\@s {
@@ -7572,7 +7581,7 @@ td.uk-text-break {
   column-count: 6; }
 
 /* Phone landscape and bigger */
-@media (min-width: 640px) {
+@media (min-width: 650px) {
   .uk-column-1-2\@s {
     -webkit-column-count: 2;
     column-count: 2; }
@@ -7771,7 +7780,7 @@ iframe.uk-cover {
 /* Image
  ========================================================================== */
 /* Phone portrait and smaller */
-@media (max-width: 639px) {
+@media (max-width: 649px) {
   .uk-background-image\@s {
     background-image: none !important; } }
 
@@ -7871,7 +7880,7 @@ iframe.uk-cover {
   float: right; }
 
 /* Phone landscape and bigger */
-@media (min-width: 640px) {
+@media (min-width: 650px) {
   .uk-align-left\@s {
     margin-top: 0;
     margin-right: 30px;
@@ -8445,7 +8454,7 @@ iframe.uk-cover {
   justify-content: space-around; }
 
 /* Phone landscape and bigger */
-@media (min-width: 640px) {
+@media (min-width: 650px) {
   .uk-flex-left\@s {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
@@ -8640,7 +8649,7 @@ iframe.uk-cover {
   order: 99; }
 
 /* Phone landscape and bigger */
-@media (min-width: 640px) {
+@media (min-width: 650px) {
   .uk-flex-first\@s {
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
@@ -9371,7 +9380,7 @@ iframe.uk-cover {
   display: none !important; }
 
 /* Phone landscape and bigger */
-@media (min-width: 640px) {
+@media (min-width: 650px) {
   .uk-hidden\@s {
     display: none !important; } }
 
@@ -9394,7 +9403,7 @@ iframe.uk-cover {
  * Visible
  */
 /* Phone portrait and smaller */
-@media (max-width: 639px) {
+@media (max-width: 649px) {
   .uk-visible\@s {
     display: none !important; } }
 
@@ -10579,7 +10588,7 @@ a {
   font-family: "Federo", sans-serif;
   color: #e28528; }
 
-picture {
+picture, footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10614,7 +10623,7 @@ picture {
 footer p {
   font-family: "Federo", sans-serif; }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 650px) {
   /* sets scales and padding for mobile; calcultions occur in class declaration*/
   body {
     --mobileScaleIndex: 0.5;
@@ -10625,6 +10634,6 @@ footer p {
     padding: 10px; }
   /* if mobile is long enough, style the footer to be detached */ }
 
-@media screen and (max-width: 640px) and (min-height: 500px) {
+@media screen and (max-width: 650px) and (min-height: 500px) {
   .grid-landing-page footer {
     margin: 30px; } }
